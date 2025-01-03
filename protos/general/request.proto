@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package general;
+
+option go_package = "github.com/realtemirov/go-sqlc-grpc-http/generated/general";
+
+import "google/api/visibility.proto";
+import "validate/validate.proto";
+
+message GetAllRequest {
+    int32 page_size  = 1 [(validate.rules).int32.gt = 0];
+    int32 page       = 2 [(validate.rules).int32.gt = 0];
+    string search    = 3;
+    string user_id   = 4 [(google.api.field_visibility).restriction = "INTERNAL"];
+    int32 limit      = 5 [(google.api.field_visibility).restriction = "INTERNAL"];
+    int32 offset     = 6 [(google.api.field_visibility).restriction = "INTERNAL"];
+    string lang      = 7;
+    int32 country_id = 8 [(validate.rules).int32.gt = 0];
+}

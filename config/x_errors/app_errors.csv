@@ -1,0 +1,6 @@
+method,error_key,grpc_code,error_code,en,ru,uz
+main,db_failed,13,10000,An unexpected error occurred in the system,В системе произошел неожиданный сбой,Tizimda kutilmagan xatolik sodir bo'ldi
+main,user_blocked,3,10003,The current user is blocked please try again later,Текущий пользователь заблокирован попробуйте позже,Joriy foydalanuvchi bloklangan iltimos keyinroq qaytadan urinib ko'ring
+main,internal_error,13,10011,An unexpected error occurred in the system,В системе произошел неожиданный сбой,Tizimda kutilmagan xatolik sodir bo'ldi
+main,date_conversion_failed,3,10016,Failed to convert data to desired form,Не удалось преобразовать данные в нужную форму,Ma'lumotlarni talab qilingan shaklga aylantirish muvaffaqiyatli amalga oshmadi
+main,no_data_for_period,3,400001,Not found data for this period date,Данные за этот период не найдены,Ushbu davr sanasi uchun maʼlumot topilmadi

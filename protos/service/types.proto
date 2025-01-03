@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package my_service;
+
+option go_package = "github.com/realtemirov/go-sqlc-grpc-http/generated/my_service";
+
+
+message Request {
+    string message = 1;
+}
+
+message Response {
+    string message = 1;
+}
